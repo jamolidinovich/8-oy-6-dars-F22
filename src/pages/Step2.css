@@ -1,0 +1,158 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.wrapper {
+  display: flex;
+  width: 70%;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #64748b;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.plan {
+  flex: 1;
+  /* margin-right: 1rem; */
+  position: relative;
+  width: 138px;
+  height: 160px;
+}
+
+.plan:last-child {
+  margin-right: 0;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  border-color: #6366f1;
+}
+
+.plan-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.plan-details h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-details p {
+  color: #475569;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + .plan-card {
+  border-color: #6366f1;
+  background-color: #eef2ff;
+}
+
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.toggle-label {
+  font-size: 1rem;
+  color: #475569;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.09px;
+  text-align: right;
+}
+
+.toggle-input {
+  margin: 0 1rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.go-back-button,
+.next-step-button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+}
+
+.go-back-button:hover,
+.next-step-button:hover {
+  background-color: #022959;
+}
+.switch {
+  width: 40px;
+  height: 20px;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch.on {
+  background-color: #1e3a8a;
+}
+
+.switch-handle {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: left 0.3s ease;
+}
+
+.switch.on .switch-handle {
+  left: 21px;
+}

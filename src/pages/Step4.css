@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.wrapper {
+  display: flex;
+  width: 70%;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #64748b;
+}
+
+.summary {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.plan-summary {
+  margin-bottom: 1.5rem;
+}
+
+.plan-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.plan-price {
+  color: #64748b;
+  font-weight: bold;
+}
+
+.change-link {
+  color: #6366f1;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.addons-summary {
+  margin-top: 1rem;
+}
+
+.addon-item {
+  display: flex;
+  justify-content: space-between;
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
+
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  /* color: #6366f1; */
+  font-size: 1.25rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.go-back-button,
+.next-step-button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #483eff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-back-button:hover,
+.next-step-button:hover {
+  background-color: #483eff;
+}
+
+.confirm-button {
+  background-color: #483eff;
+}
+
+.confirm-button:hover {
+  background-color: #483eff;
+}

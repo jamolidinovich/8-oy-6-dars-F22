@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.wrapper {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 100%;
+  padding: 16px;
+  gap: 70px;
+}
+
+.sidebar {
+  background: linear-gradient(135deg, #483d8b, #7b68ee);
+  padding: 40px 30px;
+  width: 274px;
+  height: 568px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../assets/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 274px;
+  height: 568px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step span {
+  background-color: white;
+  color: #483d8b;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.step p {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.main-content {
+  padding: 40px;
+  width: 450px;
+  height: 372px;
+  margin-top: 10px;
+}
+
+.main-content h1 {
+  font-size: 24px;
+  color: #102a43;
+  margin-bottom: 10px;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36.77px;
+  text-align: left;
+}
+
+.main-content p {
+  color: #627d98;
+  margin-bottom: 30px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #022959;
+  margin-bottom: 5px;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.09px;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #102a43;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 123px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: center;
+  justify-content: end;
+  margin-top: 120px;
+}
+/* Step1.css */
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step span {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.step span.active {
+  background-color: #bee2fd;
+  color: #022959;
+}
+
+.step a {
+  text-decoration: none;
+  color: white;
+}
+
+.step.active p {
+  font-weight: bold;
+}
+
+.stepp {
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 13.79px;
+  text-align: left;
+  color: #abbcff;
+  opacity: 0.9;
+}
+
+form {
+  width: 450px;
+  height: 372px;
+}
